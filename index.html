@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Canvas Test</title>
+</head>
+<body>
+  <canvas id="c" width="800" height="500"></canvas>
+  <script>
+    // Set the container of the canvas and set the context.
+    var c = document.querySelector("#c");
+    var ctx = c.getContext("2d");
+
+    ctx.imageSrc = "Secret_of_Monkey_Island.jpg"
+
+    /*
+    This paints RGB stripes using the imageData object.
+    var data = ctx.getImageData(0, 0, 500, 500);
+    function paintGreen(imageData) {
+      var numPixels = imageData.data.length / 4;
+      for (var i = 0; i < numPixels; i++) {
+        if (i % 10 === 0) {
+          imageData.data[i * 4] = 255;
+          imageData.data[i * 4 + 3] = 255;
+        }
+      }
+      ctx.putImageData(imageData, 0, 0);
+    }
+
+    paintGreen(data);
+    */
+
+  </script>
+</body>
+</html>
